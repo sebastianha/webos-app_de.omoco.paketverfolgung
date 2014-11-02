@@ -1,0 +1,392 @@
+<div id="main">
+	<div class="palm-page-header">
+		<div class="header-icon custom"></div>
+			<div class="header-text">
+				<span x-mojo-loc=''>Einstellungen</span>
+			</div>
+			<div class="header-sliding-toggle" style="right:10px;top:10px">
+				<div id="togglehelp" class="help-button"></div>
+			</div>
+		</div>                                                                                     
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Ansicht</div>
+		<div class="palm-list">
+
+	    	<div class="palm-row first" x-mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div id="selector3" x-mojo-element="ListSelector"></div>   
+					<div class="prefs-helptext" name="helptext">Hier kann die automatische Sortierung der Liste festgelegt werden. Die Liste wird immer dann automatisch sortiert, wenn die App gestartet wird, eine Sendung hinzugefügt wird, oder die Liste aktualisiert wird.</div>
+				</div>
+			</div>
+					
+	    	<div class="palm-row" x-mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div id="selector4" x-mojo-element="ListSelector"></div>   
+					<div class="prefs-helptext" name="helptext">Legt fest welches Datum in der Liste der Sendungen angezeigt werden soll. Es kann zwischen dem Erstellungsdatum und der letzten Statusänderung ausgewählt werden.</div>
+				</div>
+			</div>
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Liste einfärben:</span>		
+							</td>
+							<td>
+								<div id="toggle12" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Wenn aktiviert, werden die Pakete in der Liste je nach Unternehmen farbig hervorgehoben.</div>
+				</div>
+			</div>
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Details einfärben:</span>		
+							</td>
+							<td>
+								<div id="toggle13" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Wenn aktiviert, wird auch die Detailansicht je nach Unternehmen eingefärbt.</div>
+				</div>
+			</div>
+
+	    	<div id="map0row" class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Karte anzeigen:</span>		
+							</td>
+							<td>
+								<div id="toggle15" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Den Standort der Sendung in der Detailansicht auf einer Karte zeigen.</div>
+				</div>
+			</div>
+
+	    	<div id="map1row" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div id="selector5" x-mojo-element="ListSelector"></div>
+					<div class="prefs-helptext" name="helptext">Zoomeinstellung für die große Kartenansicht. 2 ist weit entfernt, 10 ist max. rangezoomt.</div>   
+				</div>
+			</div>
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Cache benutzen:</span>		
+							</td>
+							<td>
+								<div id="toggle10" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Wird der Cache benutzt, werden in der Detailansicht schon die letzten bekannten Details angezeigt. Sobald die neuen Informationen geladen sind, werden diese dann angezeigt.</div>
+				</div>
+			</div>
+
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Dunkles Design:</span>		
+							</td>
+							<td>
+								<div id="toggle6" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Schaltet das alternative, dunkle Palmdesign an. Es ist nicht komplett angepasst, bietet aber eine Alternative zum Standarddesign.</div>
+				</div>
+			</div>
+					
+		</div>
+	</div>
+
+
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Aktualisierung</div>
+		<div class="palm-list">
+	  				
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Aktual. bei Start:</span>		
+							</td>
+							<td>
+								<div id="toggle1" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Wenn aktiviert, wird bei jedem Start und beim Aufruf vom Dashboard aus die komplette Liste der Sendungen aktualisiert.</div>
+				</div>
+			</div>					
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Aktual. bei Neu:</span>		
+							</td>
+							<td>
+								<div id="toggle2" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Legt fest ob eine Sendung nach dem Hinzufügen direkt aktualisiert werden soll.</div>
+				</div>
+			</div>	
+					
+	    	<div id="autorefresh0row" class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Automatisch Aktual.:</span>		
+							</td>
+							<td>
+								<div id="toggle3" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Die App kann im Hintergrund die Liste automatisch aktualisieren. Dazu muss aber die App und/oder das Dashboard laufen.</div>
+				</div>
+			</div>						
+
+	    	<div id="autorefresh1row" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div id="selector1" x-mojo-element="ListSelector"></div>   
+				</div>
+			</div>
+					
+	    	<div id="autorefresh2row" class="palm-row" style="display:none">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Nur 6-20 Uhr Aktual.:</span>		
+							</td>
+							<td>
+								<div id="toggle8" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Es wird nur in dem Zeitraum von 6-20 Uhr aktualisiert. Die Aktualisierung beginnt morgens dann wieder zwischen 6 und 7 Uhr.</div>
+				</div>
+			</div>	
+					
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Auch kleine Änder.:</span>		
+							</td>
+							<td>
+								<div id="toggle11" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Normalerweise wird nur bei den fünf großen Statusänderungen der Status gespeichert und der Benutzer benachrichtigt. Wenn diese Option aktiviert ist, wird jede Detailänderung berücksichtigt.</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+					
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Benachrichtigung</div>
+		<div class="palm-list">
+										
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Benachr. anzeigen:</span>		
+							</td>
+							<td>
+								<div id="toggle4" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Wenn aktiviert, wird bei einer Änderung eine Benachrichtigung eingeblendet. Zusätzlich kann ein Klingelton abgespielt werden.</div>
+				</div>
+			</div>
+					
+	    	<div id="notify1row" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div id="selector2" x-mojo-element="ListSelector"></div>   
+				</div>
+			</div>
+
+			<div id="currentringtonerow" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div class="label" x-mojo-loc=''>Klingelton</div>
+					<div id='currentringtone' class="title"></div>
+				</div>
+			</div>
+
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Dashboard anz.:</span>		
+							</td>
+							<td>
+								<div id="toggle5" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Das Dashboard ist der Bereich unten, in dem sich laufende Programme als kleine Icons sammeln. Es kann dazu dienen, dass die automatische Aktualisierung aktiv bleibt. Außerdem werden Statusänderungen dort gesammelt angezeigt. Die App kann direkt aus dem Dashboard gestartet werden.</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- LITE START -->
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Import / Export</div>
+		<div class="palm-list">
+					
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;Push aktivieren:</span>		
+							</td>
+							<td>
+								<div id="toggle7" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>
+						</tr><tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="sendpushlink" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Bookmarklet zusenden</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Wenn Push aktiviert ist, können Sendungen direkt vom Computer aus zum Handy geschickt werden. Bei neuen Sendungen wird dann die Information direkt übernommen. Damit das funktioniert muss einmalig ein Bookmarket eingerichtet werden. Eine genauere Anleitung erscheint beim Einrichten des Bookmarklets.</div>
+				</div>
+			</div>
+					
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="importparcels" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Sendungen importieren</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Eine Liste mit Sendungen im CSV-Format kann hier importiert werden. Die Datei kann auf der Medienpartition oder im Web liegen. Alternativ kann auch aus der Zwischenablage importiert werden.</div>
+				</div>
+			</div>
+					
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="exportparcels" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Als E-Mail exportieren</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Export der aktuellen Sendungen als E-Mail, zum späteren Import geeignet. Bei dieser Art des Exports ist die Anzahl der Sendungen nicht limitiert.</div>
+				</div>
+			</div>
+			
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="exportparcelsinternal" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Auf Gerät exportieren</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Export der aktuellen Sendungen als Textdatei. Die Datei wird direkt auf dem Gerät gespeichert. Hinweis: Dies ist nur über den Umweg eines externen Servers möglich. Die Sendungsdaten werden dort nicht gespeichert. Bei dieser Art des Exports werden maximal ca. 100 Sendungen unterstützt.</div>
+				</div>
+			</div>
+					
+		</div>
+	</div>
+<!-- LITE STOPP -->
+	
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Sonstiges</div>
+		<div class="palm-list">
+
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Updates suchen:</span>		
+							</td>
+							<td>
+								<div id="toggle9" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Die App kann beim Start automatisch nach Updates und Störungsmeldungen suchen. Darüber kann der Entwickler sie informieren, falls es Neuerungen oder Probleme mit der Aktualisierung von Sendungen gibt.</div>
+				</div>
+			</div>
+			
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Beta Unternehmen:</span>		
+							</td>
+							<td>
+								<div id="toggle14" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Hiermit werden Unternehmen freigeschaltet die noch nicht vollständig getestet worden sind. Ich freue mich weitere Sendungs-nummern und Probleme per Mail zu bekommen, damit die Dienste weiter getestet werden können. Damit die Einstellung aktiv wird, muss die App neu gestartet werden.</div>
+				</div>
+			</div>
+			
+			<!-- MANAGE SERVICES
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="manageservices" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Unternehmen verwalten</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Die Liste der verfügbaren Unternehmen verwalten und neue Unternehmen hinzufügen.</div>
+				</div>
+			</div>
+			MANAGE SERVICES END -->
+			
+		</div>
+	</div>
+
+	<div id="resetall" class="palm-button negative buttonfloat" x-mojo-tap-highlight="momentary">Einstellungen Zurücksetzen</div>
+</div>
+
+

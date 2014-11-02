@@ -1,0 +1,40 @@
+{
+	"id": "de.omoco.paketverfolgung",
+	"version": "1.2.6",
+	"vendor": "omoco",
+	"vendorurl": "http://omoco.de",
+	"type": "web",
+	"main": "index.html",
+	"title": "Package Tracker",
+	"icon": "icon_64.png",
+	"smallicon": "images/smallicon.png",
+	"miniicon": "images/miniicon.png",
+	"copyright": "© 2011 Sebastian Hammerl",
+	"support": {
+		"url": "http://packagetracker.omoco.de",
+		"email": {
+			"address": "packagetracker@omoco.de",
+			"subject": "App Support"
+             },
+             "phone": "",
+             "resources": [
+				{
+					"type": "scene",
+					"label": "Manual / Help",
+					"sceneName": "res-topics"
+				},
+				{
+					"type": "scene",
+					"label": "FAQs",
+					"sceneName": "res-faqs"
+				},
+				{
+					"type": "scene",
+					"label": "Acknowledgments",
+					"sceneName": "res-about"
+				}
+			]
+	},
+	"noWindow": true,
+	"keywords": ["Package", "Packet", "Tracking", "Parcel", "Letter", "Post"]
+}

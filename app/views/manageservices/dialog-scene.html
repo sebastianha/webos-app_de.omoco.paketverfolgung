@@ -1,0 +1,42 @@
+<div id="palm-dialog-content" class="palm-dialog-content">
+    <div class="palm-dialog-title" id="dialogtitle">
+        Edit Service
+    </div>
+	<div class="palm-dialog-separator"></div>
+
+	<div class="textfield-group" x-mojo-focus-highlight="true">
+		<div class="title">
+			<div id="label" class="label">Name</div>
+			<div x-mojo-element="TextField" id="name"></div>
+		</div>    
+	</div>
+
+	<div class="textfield-group" x-mojo-focus-highlight="true">
+		<div class="title">
+			<div class="label">Source</div>
+			<div x-mojo-element="TextField" id="src"></div>
+		</div>    
+	</div>
+
+	<!-- hier passt der Style noch nicht wirklich -->
+	<div class="palm-row" style="margin: -1px -18px 0 -26px;">
+		<div class="palm-row-wrapper">
+			<table width="100%">
+				<tr>
+					<td>
+						<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Beta Service:</span>		
+					</td>
+					<td>
+						<div id="togglebeta" x-mojo-element="ToggleButton" class="toggle-text"></div>
+					</td>	
+				</tr>
+			</table>
+		</div>    
+	</div>
+
+    <div class="palm-dialog-buttons">
+		<div id="save" class="palm-button affirmative buttonfloat" x-mojo-tap-highlight="momentary">Save</div>
+		<div id="cancel" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Cancel</div>
+    </div>
+
+</div>

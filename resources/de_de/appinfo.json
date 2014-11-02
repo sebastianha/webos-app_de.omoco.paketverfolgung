@@ -1,0 +1,40 @@
+{
+	"id": "de.omoco.paketverfolgung",
+	"version": "1.2.6",
+	"vendor": "omoco",
+	"vendorurl": "http://omoco.de",
+	"type": "web",
+	"main": "../../index.html",
+	"title": "Paketverfolgung",
+	"icon": "../../icon_64.png",
+	"smallicon": "images/smallicon.png",
+	"miniicon": "../../images/miniicon.png",
+	"copyright": "© 2011 Sebastian Hammerl",
+	"support": {
+		"url": "http://paketverfolgung.omoco.de",
+		"email": {
+			"address": "paketverfolgung@omoco.de",
+			"subject": "App Support"
+             },
+             "phone": "",
+             "resources": [
+				{
+					"type": "scene",
+					"label": "Anleitung / Hilfe",
+					"sceneName": "res-topics"
+				},
+				{
+					"type": "scene",
+					"label": "Häufig gestellte Fragen",
+					"sceneName": "res-faqs"
+				},
+				{
+					"type": "scene",
+					"label": "Danksagungen",
+					"sceneName": "res-about"
+				}
+			]
+	},
+	"noWindow": true,
+	"keywords": ["Paket", "Verfolgung", "Sendung", "Brief", "Post"]
+}

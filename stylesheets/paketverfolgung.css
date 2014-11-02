@@ -1,0 +1,32 @@
+.palm-page-header .header-icon.custom {
+	background: url(../images/header-icon.png) no-repeat;
+}
+
+.dashboard-task-icon {
+	background: url(../images/dashboard-icon.png) center left no-repeat;
+}
+
+.explanation-text {                                                                 
+	margin: 5px 23px 10px 23px;
+	font-size: 14px;                                           
+}
+
+.prefs-helptext {
+	font-size:14px;
+	color:grey;
+	padding-top:0px;
+	padding-bottom:7px;
+	padding-left:15px;
+	padding-right:10px;
+	display:none;
+}
+
+.help-button {
+	width:32px;
+	height:32px;
+	background: url(../images/help.png) center left no-repeat;
+}
+
+.help-button:active {
+	background: url(../images/help_pressed.png) center left no-repeat;
+}

@@ -1,0 +1,26 @@
+<div id="main">
+	<div class="palm-page-header">
+		<div class="header-icon custom"></div>
+		<div class="header-text">
+			<span x-mojo-loc=''>Paketverfolgung</span>
+		</div>
+		<div class="header-sliding-toggle" style="right:10px;top:10px">
+			<div x-mojo-element="Spinner" id="waiting_spinner_top"></div>
+		</div>
+	</div>
+
+	<!--<div x-mojo-element="List" id="parcelslist" class="listClass" name="listName"></div>-->
+	<div x-mojo-element="FilterList" id="parcelslist" class="listClass" name="listName"></div>
+	
+	<center>
+		<div id="tipsdiv" style="display:none;width:240px;font-size:18px;color:grey;">
+			<br>Tipp: Es lohnt sich die <a id="starthelp">Hilfe</a> und die <a id="startfaqs">FAQs</a> durchzulesen
+		</div>
+		<!-- LITE START --
+		<div id="litediv" style="display:none;width:240px;font-size:18px;color:grey;">
+			<br>Um mehr als zwei Sendungen verfolgen zu können, bitte<br>die <a href="http://developer.palm.com/webChannel/index.php?packageid=de.omoco.paketverfolgung">Vollversion</a> kaufen.
+		</div>
+		-- LITE STOPP -->
+	</center>
+</div>
+

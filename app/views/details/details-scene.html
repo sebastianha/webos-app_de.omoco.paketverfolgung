@@ -1,0 +1,50 @@
+<div id="main">
+	<div class="palm-page-header">
+		<div class="header-icon custom"></div>
+		<div class="header-text">
+			<span x-mojo-loc=''>Package Details</span>
+		</div>
+		<div class="header-sliding-toggle" style="right:10px;top:10px">
+			<div x-mojo-element="Spinner" id="waiting_spinner_top"></div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div id="parcelname" class="palm-group-title" x-mojo-loc=''></div>
+		<div class="palm-list">
+			<div class="palm-row single" style="padding-left:13px;padding-top:5px;padding-bottom:5px">
+				<div id="trackingsite" style="width:48px;height:48px;position:absolute;top:92px;right:17px;background: url(images/trackingsite.png) center left no-repeat;"></div>
+				<div id="info" style="width:240px;font-size:18px;"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>History</div>
+		<div class="palm-list">
+			<div class="palm-row single" style="padding-top:5px;min-height:58px">
+				<center><div x-mojo-element="Spinner" id="waiting_spinner"></div></center>
+				<div id="history"></div>
+				<div align="center" id="warning" style="display:none;padding-bottom:7px;">
+					<div style="background-color:#ff0000;width:270px;height:38px;font-size:14px;">
+						Warning! The details of this package seem to be wrong and will not be saved.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="palm-group" style="display:none" id="mapcontainer">
+		<div class="palm-group-title" x-mojo-loc=''>Map</div>
+		<div class="palm-list">
+			<div class="palm-row single">
+				<div id="map" style="width:100%;height:45px;border-radius:13px;background-repeat:no-repeat;background-position:0px -20px;padding-top:13px">
+					<center><div x-mojo-element="Spinner" id="waiting_spinner"></div></center>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div x-mojo-element="List" id="detailslist" class="listClass" name="listName"></div>
+</div>
+

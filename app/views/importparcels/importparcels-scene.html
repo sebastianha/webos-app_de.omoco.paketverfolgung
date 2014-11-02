@@ -1,0 +1,57 @@
+<div id="main">
+	<div class="palm-page-header">
+		<div class="header-icon custom"></div>
+			<div class="header-text">
+				<span x-mojo-loc=''>Import Packages</span>
+			</div>
+			<div class="header-sliding-toggle" style="right:10px;top:10px">
+				<div x-mojo-element="Spinner" id="waiting_spinner_top"></div>
+			</div>
+		</div>                                                                                     
+	</div>
+
+	<div class="explanation-text" id="helptext" x-mojo-loc="">
+		The file has to be located at the media partition or online (http://...). Each line of the file has to contain one package like this:<br><br>
+		Name;Service;TrackingID<br>
+		Name;Service;TrackingID<br>
+		[...]
+	</div>
+
+	<div x-mojo-element="Button" id="startimport"></div>
+	<div x-mojo-element="Button" id="startimportclipboard"></div>
+	
+	<div class="explanation-text" id="importoutput" x-mojo-loc=""></div>
+	
+	<div id="close" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary" style="display:none">Close</div>
+
+
+	<div id="importscripttoggle" style="padding-top:10px"><table class="palm-divider collapsible" x-mojo-touch-feedback="delayed">
+		<tr>
+			<td class="left"></td>
+			<td class="label">
+				Importscript
+			</td>
+			<td class="line" width="100%"></td>
+			<td>
+				<div class="palm-arrow-closed arrow_button"></div>
+			</td>
+			<td class="right"></td>
+		</tr>
+	</table></div>
+
+	<div class="palm-group unlabeled" id="importscriptnamerow" style="display:none">
+		<div class="palm-list">
+			<div class="explanation-text" style="margin: 5px 10px 10px 10px;" x-mojo-loc="">
+				The importfile can be preprocessed by a scriptfile defined here. If not defined the importfile has to be in the format given above.
+			</div>
+			<div class="palm-row last">
+				<div class="palm-row-wrapper textfield-group" x-mojo-focus-highlight="true">
+					<div class="title">
+			   			<div id="importscriptname" name="textField"  x-mojo-element="TextField"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

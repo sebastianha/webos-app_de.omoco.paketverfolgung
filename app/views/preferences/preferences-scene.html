@@ -1,0 +1,392 @@
+<div id="main">
+	<div class="palm-page-header">
+		<div class="header-icon custom"></div>
+			<div class="header-text">
+				<span x-mojo-loc=''>Preferences</span>
+			</div>
+			<div class="header-sliding-toggle" style="right:10px;top:10px">
+				<div id="togglehelp" class="help-button"></div>
+			</div>
+		</div>                                                                                     
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>View</div>
+		<div class="palm-list">
+
+	    	<div class="palm-row first" x-mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div id="selector3" x-mojo-element="ListSelector"></div>   
+					<div class="prefs-helptext" name="helptext">Set the order of the packages list. The list will be ordered automatically when starting the app, adding a new package or when refreshing it.</div>
+				</div>
+			</div>
+					
+	    	<div class="palm-row" x-mojo-tap-highlight="momentary">
+				<div class="palm-row-wrapper">
+					<div id="selector4" x-mojo-element="ListSelector"></div>   
+					<div class="prefs-helptext" name="helptext">Set the shown date of the packages in the list. Choose between the creation date or the time of the last update.</div>
+				</div>
+			</div>
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Colorize list:</span>		
+							</td>
+							<td>
+								<div id="toggle12" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">If activated the packages will be highlighted in the color corresponding the each package service.</div>
+				</div>
+			</div>
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Colorize details:</span>		
+							</td>
+							<td>
+								<div id="toggle13" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">This will highlight the details view.</div>
+				</div>
+			</div>
+
+	    	<div id="map0row" class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Show Map:</span>		
+							</td>
+							<td>
+								<div id="toggle15" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Show package location in a map in details view.</div>
+				</div>
+			</div>
+			
+	    	<div id="map1row" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div id="selector5" x-mojo-element="ListSelector"></div>
+					<div class="prefs-helptext" name="helptext">Zoom level for the map after clicked on it. 2 is zoomed out, 10 ist max zoomed in.</div>   
+				</div>
+			</div>
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Activate cache:</span>		
+							</td>
+							<td>
+								<div id="toggle10" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">When using the cache the package information will be saved and loaded from local storage before starting the web request. When there is updated information available the cached information will be replaced.</div>
+				</div>
+			</div>
+
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Dark theme:</span>		
+							</td>
+							<td>
+								<div id="toggle6" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Use the alternative dark webOS theme. It is not 100% supported but definitely worth a try for people who love it darker.</div>
+				</div>
+			</div>
+					
+		</div>
+	</div>
+
+
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Refreshing</div>
+		<div class="palm-list">
+	  				
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Refresh on start:</span>		
+							</td>
+							<td>
+								<div id="toggle1" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Refresh the list of packages when starting the app from the launcher or from the dashboard.</div>
+				</div>
+			</div>					
+
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Refresh on add:</span>		
+							</td>
+							<td>
+								<div id="toggle2" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Refresh a package after adding it to the list.</div>
+				</div>
+			</div>	
+					
+	    	<div id="autorefresh0row" class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Auto-Refresh:</span>		
+							</td>
+							<td>
+								<div id="toggle3" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">The app is able to refresh the package data in background. To use this feature the app and/or the dashboard has to be running. If you close the the app completely (card and dashboard) it will be stopped. So if you like to have updates leave the dashboard running.</div>
+				</div>
+			</div>						
+
+	    	<div id="autorefresh1row" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div id="selector1" x-mojo-element="ListSelector"></div>   
+				</div>
+			</div>
+					
+	    	<div id="autorefresh2row" class="palm-row" style="display:none">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Only 6am - 8pm:</span>		
+							</td>
+							<td>
+								<div id="toggle8" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">To save power refreshing can be disabled over night. It will start on the next day automatically between 6am and 7am.</div>
+				</div>
+			</div>	
+					
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Detailed notifications:</span>		
+							</td>
+							<td>
+								<div id="toggle11" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Normally a new status is saved only when there is one of the five big updates. With this setting on you will get notified on every small status change of a package.</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+					
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Notifications</div>
+		<div class="palm-list">
+										
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Show notifications:</span>		
+							</td>
+							<td>
+								<div id="toggle4" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Activate notifications. Additionally an alarm sound can be set.</div>
+				</div>
+			</div>
+					
+	    	<div id="notify1row" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div id="selector2" x-mojo-element="ListSelector"></div>   
+				</div>
+			</div>
+
+			<div id="currentringtonerow" class="palm-row" x-mojo-tap-highlight="momentary" style="display:none">
+				<div class="palm-row-wrapper">
+					<div class="label" x-mojo-loc=''>Ringtone</div>
+					<div id='currentringtone' class="title"></div>
+				</div>
+			</div>
+
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Show dashboard:</span>		
+							</td>
+							<td>
+								<div id="toggle5" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">The dashboard is the area on the bottom of the screen where currently running apps can display small icons. When the dashboard icon of this app is visible the app will keep running and background notifications are available. Every update of a package will be displayed. The main app can be started directly from the dashboard.</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!-- LITE START -->
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Import / Export</div>
+		<div class="palm-list">
+					
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;Activate push:</span>		
+							</td>
+							<td>
+								<div id="toggle7" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>
+						</tr><tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="sendpushlink" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Send bookmarklet</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">With the Push service you can send a tracking number directly from your computer to the app. Before using it you have to install a bookmarklet. More information about this when you hit the button.</div>
+				</div>
+			</div>
+					
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="importparcels" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Import Packages</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Import packages from a .csv file. The file can be located in the media partition or downloaded directly from the web. You also can import packages from the clipboard.</div>
+				</div>
+			</div>
+					
+	    	<div class="palm-row">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="exportparcels" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Export via email</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Export all of your packages via email. You can use this to backup your list and import it later. The number of packages is not limited.</div>
+				</div>
+			</div>
+			
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="exportparcelsinternal" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Export to device</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Export all of your packages directly to the device. Notice: To make this possible the list is sent to a server and downloaded from there. No information will be saved there. The maximum number of packages to export is 100.</div>
+				</div>
+			</div>
+					
+		</div>
+	</div>
+<!-- LITE STOPP -->
+	
+	<div class="palm-group">
+		<div class="palm-group-title" x-mojo-loc=''>Miscellaneous</div>
+		<div class="palm-list">
+
+	    	<div class="palm-row first">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Check for updates:</span>		
+							</td>
+							<td>
+								<div id="toggle9" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Get the latest updates about this app.</div>
+				</div>
+			</div>
+			
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td>
+								<span x-mojo-loc="">&nbsp;&nbsp;&nbsp;Beta services:</span>		
+							</td>
+							<td>
+								<div id="toggle14" x-mojo-element="ToggleButton" class="toggle-text"></div>
+							</td>	
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Unlock Services which are in beta state right now. There can be bugs or problems with these services. Help to improve them by sending me tracking numbers via email. To activate this setting the app must be restarted.</div>
+				</div>
+			</div>
+			
+			<!-- MANAGE SERVICES
+	    	<div class="palm-row last">
+				<div class="palm-row-wrapper">
+					<table class="palm-list-section-label">
+						<tr>
+							<td style="font-size:14px; padding:5px" colspan=2>
+								<div id="manageservices" class="palm-button buttonfloat" x-mojo-tap-highlight="momentary">Manage services</div>
+							</td>
+						</tr>
+					</table>
+					<div class="prefs-helptext" name="helptext">Manage the list of services and add new services.</div>
+				</div>
+			</div>
+			MANAGE SERVICES END -->
+			
+		</div>
+	</div>
+
+	<div id="resetall" class="palm-button negative buttonfloat" x-mojo-tap-highlight="momentary">Restore Defaults</div>
+</div>
+
+

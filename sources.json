@@ -1,0 +1,62 @@
+[
+    {"source": "app/assistants/app-assistant.js"},
+    {"source": "app/assistants/stage-assistant.js"},
+    {"source": "javascripts/DateFormat.js"},
+    {"source": "javascripts/Globals.js"},
+    {"source": "javascripts/Parcel.js"},
+    {"source": "javascripts/sha1.js"},
+    {"source": "javascripts/Utils.js"},
+    {"source": "services/nullservice.js"},
+    {
+        "scenes": "dash",
+        "source": "app/assistants/dash-assistant.js"
+    },
+    {
+        "scenes": "main",
+        "source": "app/assistants/main-assistant.js"
+    },
+    {
+        "scenes": "main",
+        "source": "app/assistants/main-dialog-assistant.js"
+    },
+    {
+        "scenes": "details",
+        "source": "app/assistants/details-assistant.js"
+    },
+    {
+        "scenes": "details",
+        "source": "app/assistants/details-dialog-assistant.js"
+    },
+    {
+        "scenes": "preferences",
+        "source": "app/assistants/preferences-assistant.js"
+    },
+    {
+        "scenes": "res-topics",
+        "source": "app/assistants/res-topics-assistant.js"
+    },
+    {
+        "scenes": "importparcels",
+        "source": "app/assistants/importparcels-assistant.js"
+    },
+    {
+        "scenes": "importparcels",
+        "source": "app/assistants/importparcels-dialog-assistant.js"
+    },
+    {
+        "scenes": "res-faqs",
+        "source": "app/assistants/res-faqs-assistant.js"
+    },
+    {
+        "scenes": "res-about",
+        "source": "app/assistants/res-about-assistant.js"
+    },
+    {
+        "scenes": "manageservices",
+        "source": "app/assistants/manageservices-assistant.js"
+    },
+    {
+        "scenes": "manageservices",
+        "source": "app/assistants/manageservices-dialog-assistant.js"
+    }
+]

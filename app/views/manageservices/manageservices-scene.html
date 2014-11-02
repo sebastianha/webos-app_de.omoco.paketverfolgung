@@ -1,0 +1,18 @@
+<div id="main">
+	<div class="palm-page-header">
+		<div class="header-icon custom"></div>
+		<div class="header-text">
+			<span x-mojo-loc=''>Manage Services</span>
+		</div>
+		<div class="header-sliding-toggle" style="right:10px;top:10px">
+			<div id="togglehelp" class="help-button"></div>
+		</div>
+	</div>
+
+	<div class="prefs-helptext" name="helptext">Here you can manage the services. The order can be changed via drag&drop. A deactives service will be removed from the dropdown list of services. Services which sources a linked directly to the web cannot be ordered.</div>
+
+	<div x-mojo-element="List" id="serviceslist" class="listClass" name="listName"></div>
+	<!--<div x-mojo-element="FilterList" id="parcelslist" class="listClass" name="listName"></div>-->
+	
+	<div id="resetservices" class="palm-button negative buttonfloat" x-mojo-tap-highlight="momentary">Reset To Default</div>
+</div>
